@@ -1,4 +1,4 @@
-<?php
+  <?php
 $a=12;$b=30;
 if($a>$b){
         for($i=1;$i<=$b;$i++){
@@ -6,7 +6,7 @@ if($a>$b){
                         $c=$i;
                 }
         }
-        if($a*$b%c==0){
+        if($a*$b%$c==0){
            $d=$a*$b/$c;
         }
 }
@@ -22,7 +22,9 @@ else if($a<$b){
             }
 };
 echo"ước chung lớn nhất của $a và $b là $c <br> bội chung nhỏ nhất của $a và $b là $d";
-?>
+ ?>
+
+
 
 
 
