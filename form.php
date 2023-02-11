@@ -10,7 +10,7 @@
             <input type="submit" name="btn" value="tính tổng"></tr>
         </form>
         <?php
-        if( isset($_POST['btn'])){
+        if( isset($_POST['st1']) && isset($_POST['st2'])){
             $number1=$_POST['st1'];
             $number2=$_POST['st2'];
             $c=$number1+$number2 ;

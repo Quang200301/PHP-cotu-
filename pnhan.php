@@ -4,15 +4,15 @@
     <title>BẢNG CỬU CHƯƠNG</title>
 </head>
 <body>
-    <form action="">
-        <label for="">nhập số:</label>
+    <form action="" method="post">
+        <label >nhập số:</label>
         <input type="number" name="so">
         <input type="submit" value="submit">
     </form>
     <?phP
-    if(isset($))
-        $b=4;
-        for($i=1;$i<=$b;$i++){
+    if(isset($_POST['so'])){
+        $soo=($_POST['so']);
+        for($i=1;$i<=$soo;$i++){
             echo"BẢNG CỬU CHƯƠNG $i";
             echo "<br>";
             for($j=1;$j<=9;$j++){
@@ -22,6 +22,7 @@
             }
             echo "<br>";
         }
+    }
 
     ?>
 </body>
