@@ -3,10 +3,10 @@
         <form action="" method=post>
             <label for="">input number:</label>
             <input type="number" name="nb">
-            <input type="submit" value="check">
+            <input type="submit" name="ok" value="check">
         </form>
         <?php
-        if (isset($_POST['nb'])){
+        if (isset($_POST['ok'])){
             $nb1=$_POST['nb'];
             $sum=0;
             while($nb1>0){

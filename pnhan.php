@@ -7,10 +7,10 @@
     <form action="" method="post">
         <label >nhập số:</label>
         <input type="number" name="so">
-        <input type="submit" value="submit">
+        <input type="submit" name="yes"value="submit">
     </form>
     <?phP
-    if(isset($_POST['so'])){
+    if(isset($_POST['yes'])){
         $soo=($_POST['so']);
         for($i=1;$i<=$soo;$i++){
             echo"BẢNG CỬU CHƯƠNG $i";
