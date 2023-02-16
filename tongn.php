@@ -2,7 +2,8 @@
     <body>
         <form action="" method=post>
             <label for="">input number:</label>
-            <input type="number" name="nb">
+            <input type="number" name="nb" value="<?php if(isset($_POST['nb']))
+            echo $_POST['nb']?>">
             <input type="submit" name="ok" value="check">
         </form>
         <?php
