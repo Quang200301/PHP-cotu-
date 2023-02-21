@@ -89,10 +89,19 @@ border: 4px solid #54a0ff;
         </form>
         <?php
         if (isset($_POST['sm'])){
-            $pasword="tuyen12345";
-            $user="tuyen24b";
+            $pasword="tu111";
+            $user="tu";
             $user1=$_POST['dn'];
             $pasword1=$_POST['pw'];
+            if($user1==""){
+                echo "<script> alert('name không được để trống !') </script>";
+            }
+            if($user1!=$user){
+                echo "<script> alert('ten khong ton tai !') </script>";
+            }
+            if($pasword1!=$pasword){
+                echo "<script> alert('pw khong ton tai !') </script>";
+            }
             if($user1==$user && $pasword1==$pasword){
                 echo "<script> alert('đăng nhập thành công !') </script>";
                 header("Location: https://www.youtube.com/") ;
